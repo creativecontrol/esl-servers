@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="control.js" defer></script>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <button onclick="send_play()">Play</button>
+    <button onclick="send_pause()">Pause</button>
+    <div>
+        <input type="text" id="time" placeholder="time in any format"></input>
+        <button onclick="send_time()">Send time</button>
+    </div>
+    <div>
+        <input type="text" id="json_entry" placeholder="arbitrary JSON"></input>
+        <button onclick="send_json()">Send JSON</button>
+    </div>
+    <button onclick="clear_log()">Clear Log</button>
+    <div id="log">
+
+
+    </div>
+</body>
+</html>
