@@ -51,12 +51,17 @@ window.onload = () => {
         console.log(event);
         try {
             data = JSON.parse(event.data);
-            if (data.hasOwnProperty("time")) {
+            if (data.hasOwnProperty("frequency")) {
+                log_msg = `json message received ${event.data}<br/>`
+                console.log(log_msg);
+                log.innerHTML=log_msg + log.innerHTML;
+            }
+            else if (data.hasOwnProperty("time")) {
                 log_msg = `time received ${data["time"]}<br/>`
                 console.log(log_msg);
                 log.innerHTML=log_msg + log.innerHTML;
             } else {
-                log_msg = `json message received ${event.data}<br/>`
+                log_msg = `invalid message<br/>`
                 console.log(log_msg);
                 log.innerHTML=log_msg + log.innerHTML;
 

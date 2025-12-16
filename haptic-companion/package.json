@@ -1,0 +1,19 @@
+{
+  "name": "haptic-companion",
+  "version": "1.0.0",
+  "description": "companion app for Extra Sense Haptics",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thadeus Reed",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^39.2.7"
+  },
+  "dependencies": {
+    "quick-local-ip": "^1.0.7",
+    "ws": "^8.18.3"
+  }
+}
